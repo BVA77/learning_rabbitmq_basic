@@ -48,7 +48,9 @@ async function receiveOrders() {
     } catch (error) {
       console.log('Error:', error.message)
     }
-  })
+  }
+//   ,{ noAck: true } can use this to no require ack
+  )
 }
 
 receiveOrders()
